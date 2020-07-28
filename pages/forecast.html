@@ -1,0 +1,18 @@
+<div
+style="padding-top: 2em;"
+
+>
+  <a
+    href="#"
+    class="list-group-item list-group-item-action"
+  >
+    <div class="d-flex w-100 justify-content-between">
+      <h5 class="mb-1">{{data.data.name}} Forecast</h5>
+      <h3 class="text-muted">Temp : {{temp}}°</h3>
+    </div>
+    <p class="mb-1">Humidity : {{data.data.main.humidity}}%</p>
+    <p class="mb-1">
+      Real Feel : {{(data.data.main.feels_like - 273.15).toFixed(2)}}°
+    </p>
+  </a>
+</div>
